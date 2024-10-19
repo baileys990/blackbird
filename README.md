@@ -43,11 +43,13 @@ python blackbird.py --email-file emails.txt
 ```bash
 python blackbird.py --username p1ngul1n0 --pdf
 ```
+
 **CSV**
 
 ```bash
 python blackbird.py --username username1 --csv
 ```
+
 **Dump**
 
 ```bash
@@ -63,7 +65,10 @@ python blackbird.py --username username1 --verbose
 **Filter**
 
 ```bash
+python blackbird.py --filter "name~Mastodon" --username crash 
 python blackbird.py --filter "name~Mastodon and cat=social or e_code<=200" --username crash
+python blackbird.py --filter "cat=social and uri_check~101010" --username crash
+python blackbird.py --filter "e_string=@101010.pl or m_code<=404" --username crash 
 ```
 
 ## More
