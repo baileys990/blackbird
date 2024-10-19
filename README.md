@@ -24,19 +24,46 @@ pip install -r requirements.txt
 **Search by username**
 
 ```bash
+python blackbird.py --username username1
 python blackbird.py --username username1 username2 username3
+python blackbird.py --username-file usernames.txt
+
 ```
 
 **Search by email**
 
 ```bash
+python blackbird.py --email email1@email
 python blackbird.py --email email1@email.com email2@email.com email3@email.com
+python blackbird.py --email-file emails.txt
 ```
 
-**Export results to PDF**
+**Export results to PDF** 
 
 ```bash
-python blackbird.py --email email1@email.com --pdf
+python blackbird.py --username p1ngul1n0 --pdf
+```
+**CSV**
+
+```bash
+python blackbird.py --username username1 --csv
+```
+**Dump**
+
+```bash
+python blackbird.py --username username1 --dump
+```
+
+**Verbose**
+
+```bash
+python blackbird.py --username username1 --verbose
+```
+
+**Filter**
+
+```bash
+python blackbird.py --filter "name~Mastodon and cat=social or e_code<=200" --username crash
 ```
 
 ## More
